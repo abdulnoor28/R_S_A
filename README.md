@@ -1,2 +1,2 @@
 # R_S_A
-this is our first mini project of me and my friend( intyaz ).
+This is our first Mini Project of Me and My friend( Intyaz ).
