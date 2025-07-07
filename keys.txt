@@ -1,0 +1,6 @@
+p: 3
+q: 17
+n: 51
+phi(n): 32
+public key(n,e): (51 , 21)
+private key(n,d): (51 , 29)

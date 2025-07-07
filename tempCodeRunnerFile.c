@@ -259,27 +259,13 @@ void decrypt()
             sscanf(line,"private key(n,d): ( %d, %d )", &n, &d);
         }
     }
-    while (fgets(line, sizeof(line), fg)) {
-            if (strstr(line, "Cipher")) 
-            {
-                sscanf(line, "Cipher: %d", &cipher);
-            }
-        }
+    fscanf(fg,"%d",&cipher);
 
-    // int read=fscanf(fg,"%d",&cipher);
-    if(cipher==0)
-    {
-
-    printf("error:Cipher value is not found in the file.please make sure to store in file.");
     //this will close the file with pointer named fg.
     fclose(fg);
     
     //this will close the file with pointer named fp.
     fclose(fp);
-
-    return;
-
-    }
 
     //the original message will be stored in decrypted variable.
     int decrypted=modexp(cipher,d,n);
